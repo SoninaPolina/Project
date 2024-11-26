@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+body {
+    color: #171a21;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'menu'
+        'logo'
+        'content'
+        'footer';
+    gap: 10px;
+}
+
+.menu {
+    grid-area: menu;
+    font-size: 18px;
+}
+
+.logo {
+    grid-area: logo;
+    position: relative;
+}
+
+.content {
+    grid-area: content;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.line {
+    display: inline;
+}
+
+.sides {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.design {
+    text-decoration: none;
+    color: #171a21;
+}
+
+.back {
+    width: 100%;
+}
+
+.name {
+    position: absolute;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform:translate(0, -50%);
+    background-color: #016fb9;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.text_about {
+    padding: 25px;
+    line-height: 24px;
+    min-height: 710px;
+}
+
+.title {
+    margin: 0 auto 25px;
+    line-height: 36px;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.posters {
+    height: 750px;
+    float: right;
+    margin: 0 0 25px 25px;
+}
+
+.question {
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.advantages {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.main_inf {
+    font-style: italic;
+    margin-bottom: 15px;
+
+}
+
+.posters_mini {
+    width: 250px;
+}
+
+.movie {
+    text-align: center;
+    font-family: 'Unbounded', sans-serif;
+    border: 1px solid black;
+    padding: 5px;
+    width: 250px;
+    background-color: #016fb9;
+    font-weight: bold;
+}
+
+.movies_col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 900px){
+    .movies_col {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px){
+    .movies_col {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1500px){
+    .movies_col {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.movies_item {
+    margin: auto;
+    padding: 25px 0;
+}
+
+.footer {
+    grid-area: footer;
+    position: relative;
+}
+
+.sign {
+    position: absolute;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform:translate(0, -50%);
+}

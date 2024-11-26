@@ -16,8 +16,10 @@ Including another URLconf
 """
 
 from django.urls import path
-from .view import first_page
+from .views import *
 
 urlpatterns = [
-    path('', first_page),
+    path('', main_page),
+    path('about/', about),
+    path('knives_out/', knives_out),
 ]

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content%}
+    <div class="movies_col">
+    {% for key, value in posts.items %}
+    <div class="movies_item">
+        <a href="{{ value }}" class="design">
+        <img src="../static/images{{ value }}.jpg" class="posters_mini item">
+        <div class="movie">{{ key }}</div>
+        </a>
+    </div>
+    <div class="movies_item">
+        <a href="{{ value }}" class="design">
+        <img src="../static/images{{ value }}.jpg" class="posters_mini item">
+        <div class="movie">{{ key }}</div>
+        </a>
+    </div>
+    <div class="movies_item">
+        <a href="{{ value }}" class="design">
+        <img src="../static/images{{ value }}.jpg" class="posters_mini item">
+        <div class="movie">{{ key }}</div>
+        </a>
+    </div>
+        <div class="movies_item">
+        <a href="{{ value }}" class="design">
+        <img src="../static/images{{ value }}.jpg" class="posters_mini item">
+        <div class="movie">{{ key }}</div>
+        </a>
+    </div>
+        <div class="movies_item">
+        <a href="{{ value }}" class="design">
+        <img src="../static/images{{ value }}.jpg" class="posters_mini item">
+        <div class="movie">{{ key }}</div>
+        </a>
+    </div>
+    <div class="movies_item">
+        <a href="{{ value }}" class="design">
+        <img src="../static/images{{ value }}.jpg" class="posters_mini item">
+        <div class="movie">{{ key }}</div>
+        </a>
+    </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}
