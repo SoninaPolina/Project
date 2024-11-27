@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
 
+/* Base */
+
 body {
     color: #171a21;
     margin: 0;
@@ -19,6 +21,7 @@ body {
 .menu {
     grid-area: menu;
     font-size: 18px;
+    background-color: #e6e6e6;
 }
 
 .logo {
@@ -52,6 +55,7 @@ body {
 
 .back {
     width: 100%;
+    margin-bottom: -4px;
 }
 
 .name {
@@ -63,15 +67,35 @@ body {
     right: 0;
     top: 50%;
     transform:translate(0, -50%);
-    background-color: #016fb9;
+    background-color: #000000;
+    color: #016fb9;
     padding: 5px;
     font-weight: bold;
 }
+
+.footer {
+    grid-area: footer;
+    position: relative;
+}
+
+.sign {
+    position: absolute;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform:translate(0, -50%);
+}
+
+/* About */
 
 .text_about {
     padding: 25px;
     line-height: 24px;
     min-height: 710px;
+    background-color: #e6e6e6;
 }
 
 .title {
@@ -84,6 +108,7 @@ body {
     height: 750px;
     float: right;
     margin: 0 0 25px 25px;
+    background-color: #ffffff;
 }
 
 .question {
@@ -99,8 +124,9 @@ body {
 .main_inf {
     font-style: italic;
     margin-bottom: 15px;
-
 }
+
+/* Main page */
 
 .posters_mini {
     width: 250px;
@@ -147,18 +173,63 @@ body {
     padding: 25px 0;
 }
 
-.footer {
-    grid-area: footer;
-    position: relative;
+/* Review */
+
+.review {
+    margin: -1px 0 0 0;
 }
 
-.sign {
-    position: absolute;
+.fio {
     font-family: 'Unbounded', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform:translate(0, -50%);
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #d0d0d0;
+}
+
+.mail {
+    margin: 10px;
+    color: #016fb9;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.text_review {
+    margin: 10px;
+}
+
+.title_review {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 32px;
+    background-color: #016fb9;
+    padding: 15px;
+    margin: -1px 0 0 0;
+    border: 1px solid black;
+}
+
+.user_form {
+    background-color: #e6e6e6;
+    margin: -1px 0 0 0;
+    padding: 10px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.caption {
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.review_area {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.review_btn {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #000000;
+    color: #016fb9;
+    padding: 5px 20px;
 }

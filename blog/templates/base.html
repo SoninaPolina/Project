@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
   <div class="container">
@@ -19,7 +19,7 @@
       <img src="{% static 'images/back.png' %}" class="back">
       <div class="name">КАДР ЗА КАДРОМ</div>
     </div>
-    <div class="content">
+    <div>
       {% block content%}
       {% endblock %}
     </div>

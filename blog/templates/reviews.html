@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<h1 class="title_review">ОСТАВИТЬ ОТЗЫВ:</h1>
+<form action="{% url 'thanks_page' %}" method="POST" class="item user_form">
+    {% csrf_token %}
+    <div><label class="caption">ФИО:</label><input name="user_name" required size="50"></div>
+    <div><label class="caption">E-mail:</label><input type="email" name="user_mail" required size="50"></div>
+    <div><label class="caption">Комментарий:</label><textarea name="user_comment" cols="50" rows="5" class="review_area"></textarea></div>
+    <button type="submit" class="review_btn">Отправить</button>
+</form>
+<h1 class="title_review">ОТЗЫВЫ ДРУГИХ ПОЛЬЗОВАТЕЛЕЙ:</h1>
+    {% for el in reviews %}
+        {% if el.verification %}
+        <div class="review item">
+            <div class="fio">{{ el.full_name }}</div>
+            <div class="mail">{{ el.email }}</div>
+            <div class="text_review">{{ el.text }}</div>
+        </div>
+        {% endif%}
+    {% endfor %}
+{% endblock %}
